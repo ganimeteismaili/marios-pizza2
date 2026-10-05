@@ -1,0 +1,24 @@
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# MySQL Workbench legt beim Speichern Sicherungskopien an
+*.mwb.bak
+*.mwb~
+
+# Zugangsdaten gehören nie in ein Repository
+.env
+*.pem
+
+# Programmpakete (falls später npm benutzt wird)
+node_modules/
+
+# Temporäre Dateien
+*.log
+*.tmp
+~$*

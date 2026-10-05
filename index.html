@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mario's Pizza · Brooklyn</title>
+    <meta name="description" content="Familienpizzeria an der Court Street in Brooklyn, seit 1992. Speisekarte, Öffnungszeiten und Anfahrt.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="kopf">
+        <div class="markise" aria-hidden="true"></div>
+        <div class="kopf-inhalt">
+            <h1>Mario's Pizza</h1>
+            <p class="slogan">Benvenuto! Handgemachte Pizza mitten in Brooklyn.</p>
+            <p id="status" class="status" aria-live="polite"></p>
+        </div>
+    </header>
+
+    <nav class="hauptnavigation" aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="#willkommen">Willkommen</a></li>
+            <li><a href="#speisekarte">Speisekarte</a></li>
+            <li><a href="#oeffnungszeiten">Öffnungszeiten</a></li>
+            <li><a href="#anfahrt">Anfahrt</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="willkommen">
+            <h2>Willkommen</h2>
+            <p>Seit <strong>1992</strong> backen wir an der Court Street in Brooklyn Pizza nach dem Rezept von Marios Nonna. Der Teig ruht 48 Stunden, gebacken wird im Steinofen.</p>
+            <p>Mario war früher Klempner und hat die Pizzeria vor Kurzem übernommen. Die Rohre sind jetzt dicht, <em>der Käse darf laufen</em>. Ob im Gastraum, zum Mitnehmen oder als Lieferung: Buon appetito!</p>
+        </section>
+
+        <section id="speisekarte">
+            <h2>Speisekarte</h2>
+            <p>Unsere Pizzen sind 30 cm groß und kommen aus dem Steinofen. Mit <strong>+</strong> legst du etwas auf deinen Bestellzettel.</p>
+
+            <div class="filter" role="group" aria-label="Speisekarte filtern" id="filter"></div>
+
+            <div class="karte-layout">
+                <div id="speisekarte-liste"></div>
+
+                <aside class="zettel" aria-labelledby="zettel-titel">
+                    <h3 id="zettel-titel">Dein Bestellzettel</h3>
+                    <p id="zettel-leer" class="zettel-leer">Noch nichts drauf. Such dir links etwas aus.</p>
+                    <ul id="zettel-liste"></ul>
+                    <p class="zettel-summe" aria-live="polite">Summe <strong id="zettel-summe">0,00 $</strong></p>
+                    <button type="button" id="zettel-senden" disabled>Bestellung abschicken</button>
+                    <p id="zettel-meldung" class="zettel-meldung" role="status"></p>
+                </aside>
+            </div>
+
+            <h3>So bestellst du</h3>
+            <ol>
+                <li>Pizza aus der Speisekarte aussuchen</li>
+                <li>Anrufen oder vorbeikommen. Luigi nimmt die Bestellung auf.</li>
+                <li>Genießen</li>
+            </ol>
+        </section>
+
+        <section id="oeffnungszeiten">
+            <h2>Öffnungszeiten</h2>
+            <dl id="zeiten">
+                <div data-tage="1"><dt>Montag</dt><dd>Ruhetag</dd></div>
+                <div data-tage="2,3,4,5"><dt>Dienstag bis Freitag</dt><dd>11:30 – 14:00 Uhr und 17:00 – 22:00 Uhr</dd></div>
+                <div data-tage="6"><dt>Samstag</dt><dd>12:00 – 23:00 Uhr</dd></div>
+                <div data-tage="0"><dt>Sonntag und Feiertage</dt><dd>12:00 – 21:00 Uhr</dd></div>
+            </dl>
+            <p class="hinweis">Alle Zeiten gelten in Brooklyn (New Yorker Ortszeit).</p>
+        </section>
+
+        <section id="anfahrt">
+            <h2>Anfahrt</h2>
+            <p>Du findest uns an der Ecke Court Street und Montague Street in Brooklyn Heights, zwei Blocks vom Borough Hall entfernt. Mit der Subway fährst du mit der 2, 3, 4 oder 5 bis <strong>Borough Hall</strong>. Parkplätze sind knapp: Komm lieber mit der Subway oder dem Fahrrad.</p>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <address>
+                <strong>Mario's Pizza</strong><br>
+                Court Street / Montague Street<br>
+                Brooklyn, <abbr title="New York">NY</abbr> 11201, USA<br>
+                Telefon: +1 718 555 0192<br>
+                E-Mail: info@marios-pizza.nyc
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 1992–2026 Mario's Pizza · Schulprojekt, alle Angaben sind fiktiv</p>
+        <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </footer>
+
+    <script src="js/speisekarte.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
